@@ -1,0 +1,183 @@
+@import "../fonts/font.css";
+@import "reset";
+
+body {
+    font-family: Gotham Pro;
+    font-weight: normal;
+    font-size: 16px;
+    background: #1F2223;
+    color:#ffffff;
+}
+
+.app {
+    height: 732px;
+    background: #000000;
+    margin: 43px 43px 47px 43px;
+    border-radius: 28px;
+}
+
+.wrapper {
+    width: 700px;
+}
+
+/* Header styles start */
+
+.header {
+    &__nav {
+        margin-left: 68px;
+    }
+    &__list {
+        margin-bottom: 24px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    &__item {
+        margin: 40px 38px 0px 0px;
+        color: #ffffff;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 22px;
+    }
+    &__link {
+        color:#ffffff;
+        text-decoration: none;
+    }
+    &__active-link {
+        text-decoration: underline;
+    }
+}
+
+/* Header styles end */
+
+/* Form styles start */
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    :nth-child(2) {
+        margin-bottom: 18px;
+    }
+    .font {
+        font-family: Gotham Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: -0.408px;
+        color: #FFFFFF;
+    }
+    &__label {
+        margin: 0px 0px 5px 63px;
+        height: 22px;
+        font-size: 13px;
+        font-weight: bold;
+        font-family: Gotham Pro;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: -0.408px;
+        color: rgba(235, 235, 245, 0.6);
+        
+    }
+    &__input {
+        @extend .font;
+        margin: 0px 0px 10px 51px;
+        padding: 6.5px 0px 7.5px 12px;
+        width: 343px;
+        height: 36px;
+        background: rgba(118, 118, 128, 0.24);
+        border-radius: 10px;
+        border: none;
+    }
+    &__input::placeholder {
+        color: rgba(235, 235, 245, 0.6);
+    }
+    &__button {
+        @extend .font;
+        margin: 0px 0px 23px 51px;
+        width: 343px;
+        height: 50px;
+        background: #007AFF;
+        border-radius: 8px;
+        border: none;
+        text-align: center;
+    }
+    &__photo-label {
+        margin: 0px 0px 48px 51px;
+        width: 122px;
+        height: 86px;
+        border-radius: 10px;
+        border: none;
+    }
+    &__response {
+        @extend .font;
+        margin: 0px 0px 36px 51px;
+        padding: 6.5px 0px 7.5px 12px;
+        width: 343px;
+        height: 120px;
+        resize: none;
+        background: rgba(118, 118, 128, 0.24);
+        border-radius: 10px;
+        border: none;
+    }
+}
+
+/* Form styles end */
+
+/* Palette styles start */
+
+.palette {
+    height: 381px;
+    &__list {
+        margin: 33px 0px 0px 79px;
+        width: 320px;
+        max-height: 500px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__li {
+        width: 79px;
+        height: 79px;
+    }
+    &__item {
+        width: 54px;
+        height: 54px;
+        background: #ffffff;
+        border-radius: 5px;
+        border: none;
+    }
+    &__cross {
+        position: relative;
+        top: -62px;
+        left: 44px;
+    }
+    &__color-picker {
+        margin-left: 53px;
+        
+    }
+    &__button {
+        font-family: Gotham Pro;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 22px;
+        letter-spacing: -0.408px;
+        color: #FFFFFF;
+        margin: 0px 0px 20px 51px;
+        width: 343px;
+        height: 50px;
+        background: #007AFF;
+        border-radius: 8px;
+        border: none;
+        text-align: center;
+    }
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* Palette styles end */
